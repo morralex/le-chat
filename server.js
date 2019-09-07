@@ -5,7 +5,7 @@ var app = express();
 
 var PORT = process.env.PORT || 8080;
 
-
+console.log(PORT)
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -14,7 +14,7 @@ app.use(express.json());
 var server = app.listen(PORT, function () {
     console.log("now listening on port " + PORT)
 });
-
+console.log(server)
 // we have to create static pages
 app.use(express.static('public'));
 
@@ -40,3 +40,4 @@ io.on('connection', function (socket) {
         socket.broadcast.emit('typing', data)
     })
 });
+console.log(io)
