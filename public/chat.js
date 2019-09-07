@@ -1,5 +1,5 @@
 //Make connection
-var socket = io.connect('process.env.PORT' || 'http://localhost:8080')
+var socket = io.connect('https://blooming-bastion-21002.herokuapp.com/')
 
 //query DOM
 var message = document.getElementById('message');
