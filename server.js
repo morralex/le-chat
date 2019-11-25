@@ -3,7 +3,7 @@ var socket = require('socket.io');
 
 var app = express();
 
-var PORT = process.env.PORT || 'https://ancient-castle-41681.herokuapp.com/';
+var PORT = process.env.PORT || 8080;
 
 
 // Sets up the Express app to handle data parsing

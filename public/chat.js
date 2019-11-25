@@ -1,5 +1,5 @@
 //Make connection
-var socket = io.connect('localhost:8080')
+var socket = io.connect('https://ancient-castle-41681.herokuapp.com')
 
 //query DOM
 var message = document.getElementById('message');
