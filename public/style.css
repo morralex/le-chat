@@ -1,7 +1,6 @@
-.chat-window-custom{
+  
+#chat-window {
     height:30vh;
     color: black;
+    overflow: scroll;
 }
-
-
-

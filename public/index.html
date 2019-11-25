@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/0d13b5b5a0.js"></script>
     <title>Document</title>
 
@@ -21,33 +21,49 @@
 </head>
 
 
-    <body style='background: #4a4a4a; margin-top: 20vh;'>
-        <div class="container">
-          
-      <!-- Chat Window -->
+<body style='background: #4a4a4a; margin-top: 20vh;'>
+    <div class="container">
 
-            <div class="row">
-
-                <div id="chat-window">
-                    <div id="output" style="background: #e3f2fe"></div>
+        <div class="row bg-light mb-0">
+            <div class="col-md-12">
+                <div id="chat-window" class='chat-window-custom black-text'>
+                    <div id="output"></div>
                     <div id="feedback"></div>
                 </div>
-                <input id="username" type="text" placeholder="User Name" />
-                <input type="text" id="message" placeholder="Message" />
-                <a class="waves-effect waves-light amber btn" id="send">button</a>
-
             </div>
-
+        </div>
+        <div class="row bg-primary mt-0">
+            <div class="col-md-12 d-flex flex-row">
+                <input class='text-light' id="username" type="text" placeholder="User Name" />
+                <input class='text-light' type="text" id="message" placeholder="Message" />
+                <button class="bg-dark text-light btn my-auto text-align-center" id="send">Send</button>
+            </div>
         </div>
 
+        <!-- Chat Window -->
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="./chat.js"></script>
-    </body>
+        <!-- <div class="row">
+
+            <div id="chat-window">
+                <div id="output" style="background: #e3f2fe"></div>
+                <div id="feedback"></div>
+            </div>
+            <input id="username" type="text" placeholder="User Name" />
+            <input type="text" id="message" placeholder="Message" />
+            <a class="waves-effect waves-light amber btn" id="send">button</a>
+
+        </div> -->
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="./chat.js"></script>
+</body>
 
 </html>

@@ -15,7 +15,20 @@ button.addEventListener('click', function(){
         message: message.value,
         username: username.value
     })
+    output.scrollIntoView(message.value = "");
 })
+
+message.addEventListener("keypress", function (e) {
+    if (e.keyCode == 13) {
+        socket.emit('chat', {
+            message: message.value,
+            username: username.value
+        });
+        output.scrollIntoView(message.value = "");
+       
+    }
+});
+
 // Here we set up an event listener to call on when there is a key pressed on
 message.addEventListener('keypress', function(){
     socket.emit('typing', username.value);
